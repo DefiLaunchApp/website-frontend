@@ -1,0 +1,295 @@
+/* Font - Outfit */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary: #111315;
+  --secondary: #535353;
+  --button: #535353;
+  --footer: #1a1d1f;
+  --text: #cfcfcf;
+  --border: #676767;
+  --navbar: #1a1d1f;
+}
+
+
+body {
+  
+  overflow-x: hidden;
+  background-color: var(--primary);
+  font-family: "Outfit", sans-serif;
+}
+
+
+.container {
+  max-width: 1280px !important;
+  padding: 0px 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+main {
+  height: 680px;
+}
+main .container {
+  height: 100%;
+}
+.df-wraper {
+  width: 80% !important;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 70px;
+}
+.wrapped {
+  width: 87%;
+  margin: auto;
+  text-align: center;
+}
+.gg2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  align-items: center;
+  gap: 70px;
+}
+.maw {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 800px;
+  width: 100%;
+}
+.sm-title {
+  font-size: 24px;
+  color: var(--secondary);
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.maw h1 {
+  font-size: 60px;
+  line-height: 1.2;
+}
+.up {
+  padding: 5px 10px;
+}
+.gg3 {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    right: 0;
+    max-width: 500px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 991px) {
+  .maw {
+    max-width: 100%;
+    height: fit-content;
+  }
+  .banner {
+    position: static !important;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 50px;
+  }
+  main .contaiiner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  main {
+    height: 100%;
+    max-height: 100%;
+    padding-top: 50px;
+  }
+  .mt-8 {
+    margin-top: 1.5rem !important;
+  }
+  .mb-8 {
+    margin-bottom: 1.5rem !important;
+  }
+  .gg2,
+  .gg3 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .df-wraper {
+    width: 100% !important;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .wrapped {
+    width: 100%;
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+  .sm-title {
+    font-size: 14px;
+  }
+  .mt-4 {
+    margin-top: 0.5rem !important;
+  }
+
+  footer .logo {
+    margin: auto;
+  }
+}
+@media (max-width: 660px) {
+  .maw h1 {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 400px) {
+  .maw h1 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+}
+
+/* Hamburger menu */
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transform: translateX(100%);
+  width: 100%;
+  height: 100%;
+  background: #030b15;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu.active {
+  transform: translateX(0);
+}
+
+.hamburger-menu .hamburger-menu-close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.hamburger-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Marquee */
+
+.logoMarqueeSection {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+ background-color: #111315}
+
+#logoMarqueeSection {
+  max-width: 1920px!important;
+  margin: 0 auto;
+}
+
+/* Width test
+
+
+#logoMarqueeSection {
+  max-width: 1920px!;
+  margin: 0 auto;
+}
+
+ */
+
+.default-content-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    width: 100%;
+    min-height: 100vh;
+ background-color: #111315
+}
+
+div.marquee>a>img {
+  height: 30px;
+}
+
+.logoMarqueeSection>div>div {
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 0;
+}
+
+.marquee-wrapper {
+  display:  inline-block;
+  white-space: nowrap;
+}
+
+.marquee {
+    display:  inline-block;
+    white-space: nowrap;
+    position: relative;
+    transform: translate3d(0%, 0, 0);
+    animation-name: marquee;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.marquee a {
+    display:  inline-block;
+    white-space: nowrap;
+    padding-right: 3rem;
+}
+
+.marquee-wrapper:hover .marquee {
+    animation-play-state: paused !important;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+/* Marquee End */
+
+/* button glowing effect */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  30% {
+    box-shadow: 0 0 20px rgba(95, 95, 95, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(95, 95, 95, 0.8);
+  }
+}
+
+.glow-button {
+  animation: glow 1s infinite; /* Adjust the duration as needed */
+}

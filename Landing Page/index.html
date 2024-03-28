@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Defi Launch</title>
+        <link rel="icon" href="https://i.ibb.co/SwZbV5j/Defi-Launch-Rocket-2.png" type="image/png">
+
+    <!-- Add the Material Icons CSS link -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Tailwind Css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+
+
+ 
+    <!-- Navbar -->
+    <nav
+      class="bg-[color:var(--navbar)] xl:h-[80px] 2xl:h-[100px] py-4 border border-slate-700 flex justify-center"
+      data-aos="fade-down"
+      data-aos-duration="1500"
+      data-aos-delay="500"
+    >
+      <div class="container flex items-center justify-between">
+        <!-- Left section with logo -->
+        <div class="flex items-center space-x-2">
+          <img
+            src="./assets/images/logo.png"
+            alt="Logo"
+            class="w-[150px] xl:w-[200px] 2xl:w-[255px]"
+          />
+        </div>
+
+        <!-- Center section with nav items -->
+        <ul class="hidden lg:flex space-x-12">
+          
+           <li>
+            <a
+              href="https://launchpad.defilaunch.app/"
+              target="_blank"
+              class="text-white hover:text-[color:var(--secondary)] 2xl:text-[17px]"
+              >Create Token</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://launchpad.defilaunch.app/"
+              target="_blank"
+              class="text-white hover:text-[color:var(--secondary)] 2xl:text-[17px]"
+              >Launchpad</a
+            >
+          </li>
+            <li>
+            <a
+              href="https://transfer.defilaunch.app/"
+              target="_blank"
+              class="text-white hover:text-[color:var(--secondary)] 2xl:text-[17px]"
+              >Transfer Bridge</a
+            >
+          </li>
+           <li>
+            <a
+              href="https://farming.defilaunch.app"
+              class="text-white hover:text-[color:var(--secondary)] 2xl:text-[17px]"
+              >Airdrop Farming</a
+            >
+          </li>
+        
+      
+         
+         
+        
+        </ul>
+
+        <!-- Right section with button the Testnet button -->
+        <div class="hidden lg:flex">
+          <a href="" target="_blank">
+            <button class="glow-button bg-[color:var(--button)] xl:text-md 2xl:text-xl text-white px-4 py-2 rounded hover:bg-grey-600 transition duration-200">
+            
+              Alpha Live
+            </button>
+          </a>
+        </div>
+
+        <div class="flex lg:hidden">
+          <button class="hamburger-menu-open-btn">
+            <svg
+              width="25"
+              height="21"
+              viewBox="0 0 25 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24.6623 0.579636H0.46875V3.80544H24.6623V0.579636Z"
+                fill="white"
+              />
+              <path
+                d="M24.6623 8.6442H0.46875V11.87H24.6623V8.6442Z"
+                fill="white"
+              />
+              <path
+                d="M24.6623 16.7087H0.46875V19.9345H24.6623V16.7087Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hamburger-menu">
+      <button class="hamburger-menu-close-btn">
+        <svg
+          width="21"
+          height="21"
+          viewBox="0 0 21 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20.1074 18.1074L3 1L0.71901 3.28099L17.8264 20.3884L20.1074 18.1074Z"
+            fill="white"
+          />
+          <path
+            d="M18.1074 0.892578L1 18L3.28099 20.281L20.3884 3.17357L18.1074 0.892578Z"
+            fill="white"
+          />
+        </svg>
+      </button>
+
+      <ul>
+        <li>
+          <a
+            href="#"
+            class="text-white hover:text-[color:var(--secondary)] 2xl:text-[17px]"
+            >Home</a
+          >
+        </li>
+         <li>
+          <a
+            href="https://launchpad.defilaunch.app/"
+            class="text-white hover:text-[color:var(--secondary)] 2xl:text-[17px]"
+            >Create Token</a>
+        </li>
+        <li>
+          <a
+            href="https://launchpad.defilaunch.app/"
+            class="text-white hover:text-[color:var(--secondary)] 2xl:text-[17px]"
+            >Launchpad</a
+          >
+        </li>
+             <li>
+          <a
+            href="https://transfer.defilaunch.app/"
+            class="text-white hover:text-[color:var(--secondary)] 2xl:text-[17px]"
+            >Transfer Bridge</a
+          >
+        </li>
+         <li>
+          <a
+          href="https://farming.defilaunch.app"
+            class="text-white hover:text-[color:var(--secondary)] 2xl:text-[17px]"
+            >Airdrop Farming</a
+          >
+        </li>
+       
+       
+       
+       
+      </ul>
+
+      <a href="https://launchpad.defilaunch.app/">
+        <button class="glow-button bg-[color:var(--button)] xl:text-md 2xl:text-xl text-white px-4 py-2 rounded hover:bg-grey-600 transition duration-200">
+        Alpha Live
+        </button>
+      </a>
+    </div>
+
+    <!-- HERO -->
+    <main class="relative">
+      <div class="container">
+        <!-- Left content -->
+        <div class="maw">
+          <h1
+            class="font-bold text-white"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+            data-aos-offset="200"
+          >
+            <span class="text-[color:var(--secondary)]">
+              <br>Defi Launch App.</span> <br />
+             Create, launch & lock. 
+            <br> Invest, trade & bridge.<br />
+             
+            <span class="text-[color:var(--secondary)]"></span>
+         
+          </h1>
+          <p
+            class="text-lg text-slate-300 mt-8"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+            data-aos-offset="200"
+          >
+           Decentralized hub for easy onboarding and bridging on Base, Linea, zkSync, Arbitrum, Optimism, Polygon, Avalanche, Fantom, Celo, Gnosis & more. Powered by LayerZero.
+          </p>
+          <div class="buttons">
+            <a
+              href="https://launchpad.defilaunch.app/"
+              class="bg-[color:var(--button)] text-white py-3 px-6 rounded hover:bg-grey-600 transition duration-200"
+              data-aos="zoom-out-down"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-offset="200"
+              >Create Token</a
+            >
+            <a
+              href="https://launchpad.defilaunch.app/"
+              class="bg-[color:var(--primary)] border border-[color:var(--button)] text-white py-3 px-6 rounded hover:bg-gray-600 transition duration-200"
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-offset="200"
+              >Launchpad</a
+            >
+          </div>
+        </div>
+        <!-- image -->
+        <div
+          class="absolute right-[5%] 2xl:right-[10%] top-[5%] lg:block banner"
+          data-aos="zoom-out"
+          data-aos-duration="1500"
+          data-aos-delay="500"
+          data-aos-offset="200"
+        >
+          <img
+            src="./assets/images/Group 861.png"
+            alt="Hero Image"
+            class="object-cover lg:w-[420px] xl:w-[480px] h-full"
+          />
+        </div>
+      </div>
+    </main>
+
+    <!-- Section 01 -->
+    <section class="mt-24 lg:mt-0">
+      <div class="container">
+        <div class="gg2">
+          <!-- Left side with image -->
+          <div
+            class="w-[80%] p-4"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+            data-aos-offset="200"
+          >
+            <img
+              src="./assets/images/Blockchain image.png"
+              alt="Image"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <!-- Right side with content -->
+          <div>
+            <span
+              class="text-[color:var(--secondary) sm-title rounded-full font-bold"
+              data-aos="zoom-out"
+              data-aos-duration="1500"
+              data-aos-delay="300"
+              data-aos-offset="200"
+              ></span
+            >
+            <h1
+              class="xl:text-[30px] 2xl:text-[35px] font-bold text-white"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-offset="200"
+            >
+              Alpha testing
+            </h1>
+            <p
+              class="text-[color:var(--text)]"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-offset="200"
+            >
+              Easily create tokens and launchpads without any coding knowledge. <br>
+              Defi Launch makes both processes seamless for only $4 (0.002ETH).<br>
+                        </p>
+            <div class="buttons">
+            <a
+              href="https://launchpad.defilaunch.app/"
+              class="bg-[color:var(--button)] text-white py-3 px-6 rounded hover:bg-grey-600 transition duration-200"
+              data-aos="zoom-out-down"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-offset="200"
+              >Create Token</a
+            >
+            <a
+              href="https://launchpad.defilaunch.app/"
+              class="bg-[color:var(--primary)] border border-[color:var(--button)] text-white py-3 px-6 rounded hover:bg-gray-900 transition duration-200"
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+              data-aos-offset="200"
+              >Create Launch</a
+            >
+            <p>
+
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+ 
+    </section>
+    <!-- Footer -->
+    <footer
+
+    
+      class="bg-[color:var(--navbar)] 2xl:h-[424px] flex justify-start items-start"
+    >
+    
+      <div
+        class="container my-20 space-y-8 lg:flex lg:justify-between lg:items-center"
+      >
+        <div class="flex justify-center lg:justify-between flex-col">
+          <img
+            data-aos="zoom-out"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+            data-aos-offset="50"
+            src="./assets/images/logo.png"
+            alt=""
+            class="w-64 xl:w-[200px] 2xl:w-[255px] logo"
+          />
+          <p
+            class="text-[color:var(--text)] lg:w-[100%] text-center lg:text-left mt-4 lg:mt-16"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+            data-aos-offset="100"
+          >
+         © All Rights Reserved. Made with ♥ by Defi Launch 
+          <br>
+          <br>Crypto investments are risky, only invest what you can afford to lose. 
+          
+        <br>
+        <br>Do your own research (DYOR). Not financial advice (NFA).
+          </p>
+        </div>
+        <div
+          class="flex flex-wrap lg:flex-col gap-4 justify-center lg:items-start lg:justify-start"
+        >
+          <a
+            href="https://twitter.com/defilaunchapp"
+             target="_blank"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+            data-aos-offset="50"
+          >
+            <div
+              class="flex items-center justify-center gap-2 text-[color:var(--text)] text-[22px]"
+            >
+              <div
+                class="bg-[color:var(--secondary)] xl:w-[40px] 2xl:w-[50px] xl:h-[40px] rounded-lg p-1 flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#1a1d1f"
+                    d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"
+                  />
+                </svg>
+              </div>
+              Twitter
+            </div>
+          </a>
+          <a
+            href="https://t.me/defilaunchapp"
+             target="_blank"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+            data-aos-offset="50"
+          >
+            <div
+              class="flex items-center justify-center gap-2 text-[color:var(--text)] text-[22px] lg:mr-12"
+            >
+              <div
+                class="bg-[color:var(--secondary)] xl:w-[40px] 2xl:w-[50px] xl:h-[40px] 2xl:h-[50px] rounded-full p-1 flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="#1a1d1f"
+                    d="M470.435 45.423L16.827 221.249c-18.254 8.188-24.428 24.585-4.412 33.484l116.37 37.173l281.368-174.79c15.363-10.973 31.091-8.047 17.557 4.024L186.053 341.075l-7.591 93.076c7.031 14.371 19.905 14.438 28.117 7.295l66.858-63.589l114.505 86.187c26.595 15.826 41.066 5.613 46.788-23.394l75.105-357.47c7.798-35.705-5.5-51.437-39.4-37.757z"
+                  />
+                </svg>
+              </div>
+              Telegram
+            </div>
+          </a>
+
+          <a
+            href="https://discord.gg/TsvvJUS58m"
+             target="_blank"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+            data-aos-offset="50"
+          >
+            <div
+              class="flex items-center justify-center gap-2 text-[color:var(--text)] text-[22px] lg:mr-12"
+            >
+              <div
+                class="bg-[color:var(--secondary)] xl:w-[40px] 2xl:w-[50px] xl:h-[40px] rounded-lg p-1 flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#1a1d1f"
+                    d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12z"
+                  />
+                </svg>
+              </div>
+              Discord
+            </div>
+          </a>
+         
+        </div>
+      </div>
+      
+    </footer>
+    <footer>
+    <!-- Marquee Start -->
+
+    <section class="logoMarqueeSection">
+
+	<div 
+  class="container" id="logoMarqueeSection">
+		<div class="default-content-container flex items-center">
+			<div class="default-content-container-inner marquee-wrapper relative overflow-hidden inline-block">
+				<div class="marquee" style="animation-duration: 57s;">
+					<a target="_blank"><img src="https://i.ibb.co/7StjhbK/Base-Grey-logo.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+					<a target="_blank"><img src="https://i.ibb.co/MSkTprf/Linea-Grey-Logo.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+          <a target="_blank"><img src="https://i.ibb.co/4FD3gg0/zksync-grey.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+					<a target="_blank"><img src="https://i.ibb.co/6PsQ6SB/Arbitrum-Grey-Logo-1.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+					<a target="_blank"><img src="https://i.ibb.co/NrBYkJ4/Metis-Grey-Logo.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+					<a target="_blank"><img src="https://i.ibb.co/X4v0x7V/ETH-grey.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+          <a target="_blank"><img src="https://i.ibb.co/r0Brfc7/Polygon-1.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+          <a target="_blank"><img src="https://i.ibb.co/fnWRcxB/Celo.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+          <a target="_blank"><img src="https://i.ibb.co/L0bsmr6/FTM.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+          <a target="_blank"><img src="https://i.ibb.co/zVHtWdm/Gnosis-1.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+          <a target="_blank"><img src="https://i.ibb.co/Jyr1cs8/Binance-Smart-Chain-1.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+          <a target="_blank"><img src="https://i.ibb.co/7YGsGj7/powered-by-layerzero-grey.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+
+				</div>
+        <div class="marquee" style="animation-duration: 57s;">
+					<a target="_blank"><img src="https://i.ibb.co/7StjhbK/Base-Grey-logo.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+					<a target="_blank"><img src="https://i.ibb.co/MSkTprf/Linea-Grey-Logo.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+          <a target="_blank"><img src="https://i.ibb.co/4FD3gg0/zksync-grey.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+					<a target="_blank"><img src="https://i.ibb.co/6PsQ6SB/Arbitrum-Grey-Logo-1.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+					<a target="_blank"><img src="https://i.ibb.co/NrBYkJ4/Metis-Grey-Logo.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+					<a target="_blank"><img src="https://i.ibb.co/X4v0x7V/ETH-grey.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+          <a target="_blank"><img src="https://i.ibb.co/r0Brfc7/Polygon-1.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+					<a target="_blank"><img src="https://i.ibb.co/fnWRcxB/Celo.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+          <a target="_blank"><img src="https://i.ibb.co/L0bsmr6/FTM.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+          <a target="_blank"><img src="https://i.ibb.co/zVHtWdm/Gnosis-1.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+          <a target="_blank"><img src="https://i.ibb.co/Jyr1cs8/Binance-Smart-Chain-1.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+          <a target="_blank"><img src="https://i.ibb.co/7YGsGj7/powered-by-layerzero-grey.png" title="" class="marqueelogo" style="width: auto; max-width: none;"></a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+    </footer>
+   
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+
+      document
+        .querySelector(".hamburger-menu-open-btn")
+        .addEventListener("click", function () {
+          document.querySelector(".hamburger-menu").classList.add("active");
+        });
+
+      document
+        .querySelector(".hamburger-menu-close-btn")
+        .addEventListener("click", function () {
+          document.querySelector(".hamburger-menu").classList.remove("active");
+        });
+    </script>
+
+
+
+</body>
+</html>
+
+ <!-- Marquee End-->
+
+
+ <!-- Footer addition
+
+    </footer>
+     <footer 
+
+     
+     
+     
+     style="background-color: black; padding: 20px; text-align: center;">
+        <p style="color: white; margin: 0;">Copyright Defi Launch App 2024</p>
+
+        
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+
+      document
+        .querySelector(".hamburger-menu-open-btn")
+        .addEventListener("click", function () {
+          document.querySelector(".hamburger-menu").classList.add("active");
+        });
+
+      document
+        .querySelector(".hamburger-menu-close-btn")
+        .addEventListener("click", function () {
+          document.querySelector(".hamburger-menu").classList.remove("active");
+        });
+    </script>
+
+  </body>
+</html>
+-->
